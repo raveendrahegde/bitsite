@@ -1,2 +1,8 @@
 
 .idea/workspace.xml
+
+*.pyc
+
+*pycache*
+
+.idea/codeStyleSettings.xml
