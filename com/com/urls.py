@@ -20,9 +20,10 @@ from django.urls import path
 from networth import views
 
 urlpatterns = [
-    path('signup', views.signup),
-    path('signup_dj', views.signup_django),
+    path('signup_raw', views.signup),
+    path('signup', views.signup_django),
     path('login', auth_views.login, {'template_name': 'networth/login_dj.html'}),
+    path('logout', auth_views.logout, {'template_name': 'networth/login_dj.html'}),
     path('', views.home)
     # path('admin/', admin.site.urls),
 ]
